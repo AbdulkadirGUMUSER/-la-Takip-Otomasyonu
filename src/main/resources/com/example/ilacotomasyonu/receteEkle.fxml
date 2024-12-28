@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1150.0" style="-fx-background-color: linear-gradient(to top, #FF0000, #FFFFFF);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ilacotomasyonu.ReceteEkleController">
+   <children>
+      <ScrollPane layoutX="8.0" layoutY="119.0" prefHeight="569.0" prefWidth="990.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="1010.0">
+               <children>
+                  <GridPane fx:id="ilaclarGrid" layoutX="20.0" prefHeight="0.0" prefWidth="958.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="949.0" layoutY="44.0" mnemonicParsing="false" onAction="#onArttirBtnClick" style="-fx-background-color: linear-gradient(to top, #FF6666, #FFFFFF);" text="+">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="1013.0" layoutY="625.0" mnemonicParsing="false" onAction="#onReceteOlusturBtnClick" prefHeight="51.0" prefWidth="151.0" style="-fx-background-color: linear-gradient(to top, #FF6666, #FFFFFF);" text="Reçete Oluştur">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="secilenIlacCB" layoutX="513.0" layoutY="52.0" prefHeight="34.0" prefWidth="180.0" style="-fx-background-color: linear-gradient(to top, #FF6666, #FFFFFF);" />
+      <TextField fx:id="ilacSayisiTF" layoutX="728.0" layoutY="52.0" prefHeight="34.0" prefWidth="170.0" />
+      <Label layoutX="513.0" layoutY="26.0" text="Seçilen İlaç:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="728.0" layoutY="26.0" text="İlaç Sayısı:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hastaAdiTF" layoutX="998.0" layoutY="235.0" prefHeight="34.0" prefWidth="161.0" />
+      <Label layoutX="1007.0" layoutY="208.0" text="Hasta Adı:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doktorAdiTF" layoutX="998.0" layoutY="371.0" prefHeight="34.0" prefWidth="161.0" />
+      <Label layoutX="1007.0" layoutY="344.0" text="Doktor Adı:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="44.0" mnemonicParsing="false" onAction="#onGeriBtnClick" style="-fx-background-color: linear-gradient(to top, #FF6666, #FFFFFF);" text="&lt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

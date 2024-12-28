@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="168.0" style="-fx-background-color: #F8FAFC; -fx-border-color: #494949;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ilacotomasyonu.ilacItemController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="161.0" layoutX="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resimler/ilaç(1)-Photoroom.png" />
+         </image></ImageView>
+      <Label layoutX="14.0" layoutY="115.0" text="İlaç Adı:" />
+      <Label layoutX="14.0" layoutY="140.0" text="Adet:" />
+      <Label fx:id="ilacAdiLbl" layoutX="64.0" layoutY="115.0" prefHeight="17.0" prefWidth="95.0" />
+      <Label fx:id="adetLbl" layoutX="64.0" layoutY="140.0" prefHeight="17.0" prefWidth="95.0" />
+   </children>
+</AnchorPane>
